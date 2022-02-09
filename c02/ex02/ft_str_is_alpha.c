@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 15:58:15 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/02/08 17:43:50 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/02/09 20:34:51 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_str_is_alpha(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	while (*str != '\0')
 	{
 		if ((*str < 'a' || *str > 'z') && (*str < 'A' || *str > 'Z'))
 			return (0);

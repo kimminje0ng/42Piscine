@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 15:56:38 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/02/08 17:30:16 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/02/09 20:34:04 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcpy(char *dest, char *src)
 	int	i;
 
 	i = 0;
-	while (dest[i])
+	while (src[i])
 	{
 		dest[i] = src[i];
 		i++;
