@@ -6,14 +6,13 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 16:40:53 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/02/08 21:36:39 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/02/12 17:02:34 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
-char	*ft_strlowcase2(char *str)
+char	*ft_strlowcase(char *str)
 {
 	char	*tmp;
 
@@ -29,7 +28,7 @@ char	*ft_strlowcase2(char *str)
 
 int	ch_str(char c)
 {
-	if (c >= 'a' && c <= 'b')
+	if (c >= 'a' && c <= 'z')
 		return (1);
 	else if (c >= '0' && c <= '9')
 		return (2);
@@ -39,24 +38,28 @@ int	ch_str(char c)
 
 char	*ft_strcapitalize(char *str)
 {
-	int	flag;
+	int		flag;
+	char	*tmp;
 
-	str = ft_strlowcase2(str);
 	flag = 0;
-	while (*str)
+	tmp = ft_strlowcase(str);
+	while (*tmp)
 	{
 		if (flag == 0)
 		{
-			if (ch_str(*str) == 1)
-				*str -= 32;
-			flag = 1;
-		}
-		else
-		{
-			if (ch_str(*str) == 3)
+			if (ch_str(*tmp) == 1)
+			{
+				*tmp -= 32;
+				flag = 1;
+			}
+			else if (ch_str(*tmp) == 3)
 				flag = 0;
+			else
+				flag = 1;
 		}
-		str++;
+		else if (flag != 0 && ch_str(*tmp) == 3)
+			flag = 0;
+		tmp++;
 	}
 	return (str);
 }
