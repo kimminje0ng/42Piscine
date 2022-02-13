@@ -5,7 +5,7 @@
 ### Picine ###
 *.result
 ex*.c
-.out
+*.out
 tt
 
 ### C ###
