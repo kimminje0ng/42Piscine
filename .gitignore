@@ -2,6 +2,12 @@
 # Created by https://www.toptal.com/developers/gitignore/api/c,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=c,macos
 
+### Picine ###
+*.result
+ex*.c
+.out
+tt
+
 ### C ###
 # Prerequisites
 *.d
