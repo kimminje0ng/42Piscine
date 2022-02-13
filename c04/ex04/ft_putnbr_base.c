@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:49:30 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/02/12 18:25:36 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/02/13 21:07:16 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ void	ft_putnbr_base(int nbr, char *base)
 	else
 		new_nbr = nbr;
 	if (new_nbr >= base_num)
-		ft_putnbr_base(nbr / base_num, base);
-	ft_putchar(base[nbr % base_num]);
+		ft_putnbr_base(new_nbr / base_num, base);
+	ft_putchar(base[new_nbr % base_num]);
 }
