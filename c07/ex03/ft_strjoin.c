@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 12:10:30 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/02/14 20:13:21 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/02/19 16:26:16 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 
 	i = 1;
 	strs_len = ft_strlen(strs[0]);
-	if (i < size)
+	while (i < size)
 	{
 		strs_len += ft_strlen(sep) + ft_strlen(strs[i]);
 		i++;
