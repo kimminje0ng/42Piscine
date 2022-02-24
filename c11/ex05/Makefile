@@ -1,9 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/02/24 13:32:57 by minjeki2          #+#    #+#              #
+#    Updated: 2022/02/24 15:25:06 by minjeki2         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = do-op
 
 CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 
-SRCS = do_op.c operate.c tool.c tool2.c
+SRCS = do_op.c operate.c tool.c
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all

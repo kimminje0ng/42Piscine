@@ -1,26 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   operate.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/24 13:06:10 by minjeki2          #+#    #+#             */
+/*   Updated: 2022/02/24 15:25:41 by minjeki2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "mylib.h"
 
-long long	ft_add(int a, int b)
+int	ft_add(char *a, char *b)
 {
-	return (a + b);
+	return (ft_atoi(a) + ft_atoi(b));
 }
 
-long long	ft_sub(int a, int b)
+int	ft_sub(char *a, char *b)
 {
-	return (a - b);
+	return (ft_atoi(a) - ft_atoi(b));
 }
 
-long long	ft_div(int a, int b)
+int	ft_div(char *a, char *b)
 {
-	return (a / b);
+	return (ft_atoi(a) / ft_atoi(b));
 }
 
-long long	ft_mul(int a, int b)
+int	ft_mul(char *a, char *b)
 {
-	return (a * b);
+	return (ft_atoi(a) * ft_atoi(b));
 }
 
-long long	ft_rem(int a, int b)
+int	ft_rem(char *a, char *b)
 {
-	return (a % b);
+	return (ft_atoi(a) % ft_atoi(b));
 }
